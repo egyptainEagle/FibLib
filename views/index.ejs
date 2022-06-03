@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FibLib</title>
+    <link rel="stylesheet" href="public/css/main.style.css"/>
+    <script src="public/js/main.js" defer>
+      
+
+    </script>
+  </head>
+<body>
+   <header class="page-header">
+     <h1 class="page-header__slogan">FibLib <span style="width:35px; height: 2px; background: black;margin-top:5px;"></span> Upload & Get to Know Each Other</h1>
+   </header>
+   <main>
+     <article class="login-panel">
+       <span style="display: block;color:red; font-size: 0.7em; text-align: center;" name="error">Invalid Credentials</span>
+       <section class="login-panel__input-section" >
+          <div class="input-section__section-group"tabindex="1">
+            <label class="section-group__label">Username</label>
+            <input maxlength="25" class="section-group__input" name="username"tabindex="-1">
+          </div>
+          <div class="input-section__section-group"tabindex="1">
+            <label class="section-group__label">Password</label>
+            <input maxlength="25" type="password" class="section-group__input" name="password" tabindex="-1">
+          </div>
+       </section>
+       <section class="login-panel__interactive-section">
+          <button class="interactive-btn login-btn" style="color:white; font-family: BebasNeue,Courier New, Arial;letter-spacing: 0.2em; transition: all 0.1s ease-out;"  id="login-btn">Login</button>
+          <button class="interactive-btn register-btn" style="font-size: 0.6em; color: rgb(112, 3, 3); outline:none; transition: all 0.1s ease-out;" id="register-btn">Don't have account? Sign Up</button>
+       </section>
+     </article>
+   </main>
+</body>
+</html>

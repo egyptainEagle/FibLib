@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Outfit;
+    src: url("../media/Outfit.ttf");
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url("../media/BebasNeue.ttf");
+}
+
+/****
+ Any Resources url() is sent as a request that's leaded witht the path of the directory
+ that contains the stylesheet, when using the ".." or "." in the path, it omits the path that's leaded
+ When assigning resources in CSS use the url that's relative to the path of the stylesheet
+****/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+*:focus{
+    outline:none;
+    border:none;
+}
+body{
+    /*By default, body's height is set to only to fit the content*/
+    height:100vh;
+    font-family: Outfit, monospace, Arial;
+   
+}
+.page-header{
+ text-align: center;
+ padding: 30px;
+
+}
+.page-header__slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+main{
+margin:8em auto;
+width:fit-content;
+padding:5px;
+}
+.login-panel{
+    padding:15px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size:1em;
+}
+
+section{
+display: flex;
+flex-direction: column;
+gap: 13px;
+
+}
+.login-panel__input-section{
+    gap:35px;
+}
+.input-section__section-group{
+position: relative;
+display: flex;
+align-items: center;
+border:none;
+border-bottom-width: 0;
+border-left: 3px solid rgb(112, 3, 3);
+border-top-left-radius: 5px;
+cursor: pointer;
+transition: all 0.1s ease-out;
+}
+.section-group__label{
+    position: absolute;
+    left:5px;
+    cursor: pointer;
+    font-size:0.8em;
+}
+.section-group__input{
+   height:25px;
+    border:none;
+    padding: 0 5px;
+    cursor: pointer;
+}
+button#login-btn{
+background:rgb(112, 3, 3);
+}
+/* Animations */
+
+.input-section__section-group--active{
+    border-left-width: 0;
+    border:  3px solid rgb(112, 3, 3);
+    border-bottom-right-radius: 3px;
+    border-width: 2px;
+}
+.section-group__label--active{
+    visibility: hidden;
+}
+.section-group__input:focus-within{
+    border:none;
+    outline:none;
+}
+.login-panel__interactive-section button{
+    width: 100%;
+    box-sizing: inherit;
+    height:28px;
+    padding: 5px;
+    display:block;
+    background:transparent;
+    border:none;
+    cursor: pointer;
+}
+button#login-btn:hover{
+transform: scale(1.01);
+background-color:rgb(161, 46, 4);
+}
+button#login-btn:focus{
+    transform: scale(1.01);
+    background-color:rgb(161, 46, 4);
+
+}
+button#register-btn:hover{
+    border:1px solid black;
+    box-shadow: -1px 5px 0 2px gray;
+}
+button#register-btn:focus{
+    border:1px solid black;
+    box-shadow: -1px 5px 0 2px gray;
+}
+
+/*************/
+
+/*    Media Queries   */
+
+
+
+/*********************/
